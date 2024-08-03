@@ -17,7 +17,7 @@
       register: swapfile_info
       changed_when: false
       ansible.builtin.command:
-        cmd: "file {[ swapfile_path ]}"
+        cmd: "file {{ swapfile_path }}"
 
     - name: "Verify correct file type"
       ansible.builtin.assert:
