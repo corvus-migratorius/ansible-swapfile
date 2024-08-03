@@ -7,9 +7,9 @@
     swapfile_path: "/swapfile"
 
   pre_tasks:
-    - name: "Ensure 'finger' exists"
+    - name: "Ensure 'file' exists"
       ansible.builtin.package:
-        name: [finger]
+        name: [file]
         state: present
 
   tasks:
