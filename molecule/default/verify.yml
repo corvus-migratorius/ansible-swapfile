@@ -8,8 +8,7 @@
 
   pre_tasks:
     - name: "Ensure 'finger' exists"
-      when: ansible_os_family == 'Debian'
-      ansible.builtin.apt:
+      ansible.builtin.package:
         name: [finger]
         state: present
 
