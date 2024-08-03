@@ -6,6 +6,13 @@
   vars:
     swapfile_path: "/swapfile"
 
+  pre_tasks:
+    - name: "Ensure 'finger' exists"
+      when: ansible_os_family == 'Debian'
+      ansible.builtin.apt:
+        name: [finger]
+        state: present
+
   tasks:
     - name: "Check swapfile file type"
       register: swapfile_info
