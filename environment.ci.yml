@@ -1,5 +1,5 @@
 ---
-name: ansible-role-template-ci
+name: ansible-swapfile
 channels:
   - conda-forge
 dependencies:

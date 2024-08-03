@@ -1,7 +1,9 @@
-template
+ansible-swapfile
 =========
 
-Template for Ansible role monorepos
+Create/destroy a swapfile and run swapon/-off on it.
+
+Massively borrowing from https://github.com/geerlingguy/ansible-role-swap.
 
 Requirements
 ------------
@@ -23,7 +25,7 @@ Example Playbook
 
 ```yaml
 roles:
-    - role: genlab.template
+    - role: genlab.swapfile
 ```
 
 License
